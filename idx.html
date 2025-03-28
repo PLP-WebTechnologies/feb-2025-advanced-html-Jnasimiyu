@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists Images Tables and Forms</title>
+</head>
+<body>
+    <!-- Ordered list with roman numericals -->
+    <h2>Ordered lists</h2>
+    <ol type="I">
+        <li>Oranges</li>
+        <li>Mangoes</li>
+        <li>Tomatoes</li>
+        <li>Apples</li>
+        <li>Grapes</li>
+    </ol>
+        <!-- external image from pexels -->
+        <h2>Images</h2>
+        <h3>External images</h3>
+        <image src="https://images.pexels.com/photos/30894390/pexels-photo-30894390/free-photo-of-monochrome-view-of-oculus-interior-architecture.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"alt="image of a staircase"height="300"width="500"></image>
+       <!-- Table of 5 contacts -->
+         <h2>HTML Tables</h2>
+         <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Joan Joy</td>
+                    <td>Nairobi</td>
+                    <td>0754397602</td>
+                    <td>joanjoy@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Tee Kisau</td>
+                    <td>Kisumu</td>
+                    <td>0700123675</td>
+                    <td>teekisau@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Harry Jack</td>
+                    <td>Nakuru</td>
+                    <td>0715672005</td>
+                    <td>harryjack34@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Alice Tetu</td>
+                    <td>Nyeri</td>
+                    <td>0715672365</td>
+                    <td>tetualice@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Esther Joy</td>
+                    <td>Mombasa</td>
+                    <td>0720572005</td>
+                    <td>joyesther@gmail.com</td>
+                </tr>
+      </tbody>
+      </table>     
+<!-- Registration Form -->
+<h2>Registration Form</h2>
+<form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6"><br><br>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+    
+    <!-- Dropdown -->
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+        <option value="">Select a country</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+    </select><br><br>
+    
+    <!-- Radio Buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+    
+    <!-- Checkboxes -->
+    <label>Interests:</label><br>
+    <input type="checkbox" id="sports" name="interests" value="Sports">
+    <label for="sports">Sports</label>
+    <input type="checkbox" id="music" name="interests" value="Music">
+    <label for="music">Music</label>
+    <input type="checkbox" id="reading" name="interests" value="Reading">
+    <label for="reading">Reading</label><br><br>
+    
+    <button type="submit">Register</button>
+</form>
+
+   
+</body>
+</html>
